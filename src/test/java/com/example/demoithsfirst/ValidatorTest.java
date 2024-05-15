@@ -9,6 +9,12 @@ public class ValidatorTest {
     Validator validator = new Validator();
 
     @Test
+    @DisplayName("Mix max test")
+    void willItFail(){
+        Assertions.assertTrue(true);
+    }
+
+    @Test
     @DisplayName("Verifierar att telefonummer kan starta med 0")
     void phoneNumberStartsWithZero() {
         String phoneNumber = "012345678";
@@ -63,5 +69,7 @@ public class ValidatorTest {
         boolean result = validator.isEmailValid(email);
         Assertions.assertFalse(result);
     }
+
+
 
 }
