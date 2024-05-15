@@ -11,7 +11,7 @@ public class ValidatorTest {
     @Test
     @DisplayName("Mix max test")
     void willItFail(){
-        Assertions.assertTrue(true);
+        Assertions.assertTrue(false);
     }
 
     @Test
